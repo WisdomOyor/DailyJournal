@@ -1,0 +1,25 @@
+<%- include("partials/header") -%>
+<div class="home-div">
+    <h1 class="home">Home</h1>
+    <a class="add-a" href="/compose">Add new note</a>
+</div>
+
+<p><%= startingContent_ejs %></p>
+
+<% posts_ejs.forEach(post => { %>
+
+    <div>
+    <h1><%= post.postTitle %></h1>
+
+    <% if(post.postBody.length > 99){ %> 
+    <p><%= post.postBody.substring(0, 100)+"..." %> <a href="<%= postRoute_ejs + post.postTitle %>">Read more</a></p>
+    
+    <% } else { %>
+        <p><%= post.postBody %> <a href="<%= postRoute_ejs + post.postTitle %>">Read more</a></p>
+    <% } %> 
+
+    </div>
+
+<% }); %>
+
+<%- include("partials/footer") -%>

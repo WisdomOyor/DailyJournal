@@ -1,0 +1,56 @@
+.page {
+  padding: 10px 30px;
+}
+
+.home-div {
+  justify-content: space-between;
+  display: flex;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.home {
+  margin: 0;
+}
+
+.add-a {
+  padding: 10px 20px;
+  background-color: #1abc9c;
+  color: #fff;
+  border-radius: 5px;
+}
+.add-a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  font-size: 12px;
+  letter-spacing: 5px;
+}
+.navbar-nav li a:hover {
+  color: #1abc9c !important;
+}
+
+.footer-padding {
+  padding-bottom: 60px;
+}
+
+.footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #1abc9c;
+}
+
+.footer p {
+  margin-top: 25px;
+  font-size: 12px;
+  color: #fff;
+}
